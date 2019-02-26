@@ -1,9 +1,20 @@
-## Example
+## Note: the format and style can be customized.
+
+## Process
+
 ## Step 1: read data
+## import pandas as pd
+## import MyQuickDQR as dqr
 ## mydata = pd.read_csv()
+
 ## Step 2: define category columns
 ## mydata[category_columns] = mydata[category_columns].astype('category')
-## Step 3: QuickDQR(mydata, 'xxx.docx')
+## keep in mind that some columns may need to change from numeric to category: ZIP, etc.
+
+## Step 3: generate Data Quality Report
+## dqr.QuickDQR(mydata, 'xxx.docx')
+
+## Step 4: If the output reads "Fail to add graph for (variable name)", you need to manually make a plot. Sorry for the inconvenience.
 
 import pandas as pd
 import numpy as np
